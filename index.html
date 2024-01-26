@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/dee8563457.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header__menu">
+            <i class="fa-solid fa-bars"></i>
+            <h2>Overview</h2>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="header__search">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for Something">
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <section class="myCards">
+            <ul class="myCards__textWrapper">
+                <li class="myCards__title">My Cards</li>
+                <li class="myCards__link">See All</li>
+            </ul>
+            <ul class="myCards__cardWrapper">
+                <li class="myCards__item--active">
+                    <div class="myCards__balance">
+                        <span>
+                            <label for="myCards__balance">Balance</label>
+                            <p id="myCards__balance">$5000</p>
+                        </span>
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <div class="myCards__details">
+                        <span>
+                            <label for="myCards__name">Card Holder</label>
+                            <p id="myCards__name">Tornike Nozadze</p>
+                        </span>
+                        <span>
+                            <label for="myCards__valid">Valid Thru</label>
+                            <p id="myCards__name">11/28</p>
+                        </span>
+                    </div>
+                    <div class="myCard__cardNumber myCard__cardNumber--active">
+                        <p>3778 **** **** 1234</p>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                </li>
+                <li class="myCards__item">
+                    <div class="myCards__balance">
+                        <span>
+                            <label for="myCards__balance">Balance</label>
+                            <p id="myCards__balance">$5000</p>
+                        </span>
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <div class="myCards__details">
+                        <span>
+                            <label for="myCards__name">Card Holder</label>
+                            <p id="myCards__name">Tornike Nozadze</p>
+                        </span>
+                        <span>
+                            <label for="myCards__valid">Valid Thru</label>
+                            <p id="myCards__name">11/28</p>
+                        </span>
+                    </div>
+                    <div class="myCard__cardNumber ">
+                        <p>3778 **** **** 1234</p>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </body>
+</body>
+</html>

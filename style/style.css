@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0vh;
+}
+header div {
+  display: flex;
+}
+header .header__menu {
+  justify-content: space-between;
+  width: 90%;
+  padding: 0.5em;
+}
+header .header__search {
+  padding-top: 0.3em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+}
+header .header__search div {
+  width: 90vw;
+  background-color: red;
+  border-radius: 2em;
+  background-color: #F5F7FA;
+}
+header .header__search div input {
+  padding: 0.5em;
+  all: unset;
+  font-size: 1em;
+}
+header .header__search div i {
+  padding: 0.6em;
+}
+
+.myCards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myCards ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+.myCards .myCards__textWrapper {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #343C6A;
+  line-height: 3v;
+  padding-bottom: 0.7em;
+}
+.myCards .myCards__textWrapper .myCards__link {
+  cursor: pointer;
+}
+.myCards .myCards__cardWrapper {
+  flex-direction: column;
+  height: 19vh;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.myCards .myCards__cardWrapper .myCards__item {
+  height: 100%;
+  width: 85%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #ddd;
+  color: black;
+}
+.myCards .myCards__cardWrapper .myCards__item div {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 33%;
+}
+.myCards .myCards__cardWrapper .myCards__item div i {
+  font-size: 2em;
+}
+.myCards .myCards__cardWrapper .myCards__item .myCard__cardNumber {
+  border-radius: 0 0 1em 1em;
+  background-color: white;
+  border-top: 2px solid #ddd;
+}
+.myCards .myCards__cardWrapper .myCards__item .myCard__cardNumber.myCard__cardNumber--active {
+  background: rgb(76, 73, 237);
+  background: linear-gradient(180deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}
+.myCards .myCards__cardWrapper .myCards__item.myCards__item--active {
+  background: rgb(76, 73, 237);
+  background: linear-gradient(125deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}
+.myCards .myCards__cardWrapper .myCards__item--active {
+  height: 100%;
+  width: 85%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #ddd;
+  color: white;
+}
+.myCards .myCards__cardWrapper .myCards__item--active div {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 33%;
+}
+.myCards .myCards__cardWrapper .myCards__item--active div i {
+  font-size: 2em;
+}
+.myCards .myCards__cardWrapper .myCards__item--active .myCard__cardNumber {
+  border-radius: 0 0 1em 1em;
+  background-color: white;
+}
+.myCards .myCards__cardWrapper .myCards__item--active .myCard__cardNumber.myCard__cardNumber--active {
+  background: rgb(76, 73, 237);
+  background: linear-gradient(180deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}
+.myCards .myCards__cardWrapper .myCards__item--active.myCards__item--active {
+  border: none;
+  background: rgb(76, 73, 237);
+  background: linear-gradient(125deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}/*# sourceMappingURL=style.css.map */
