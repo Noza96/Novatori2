@@ -6,12 +6,16 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style/style.css">
     <script src="https://kit.fontawesome.com/dee8563457.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="header__menu">
             <i class="fa-solid fa-bars"></i>
-            <h2>Overview</h2>
+            <h2 class="header__menuTitle">Overview</h2>
             <i class="fa-solid fa-user"></i>
         </div>
         <div class="header__search">
@@ -29,22 +33,22 @@
                 <li class="myCards__link">See All</li>
             </ul>
             <ul class="myCards__cardWrapper">
-                <li class="myCards__item--active">
+                <li class="myCards__item--active myCards__item">
                     <div class="myCards__balance">
                         <span>
-                            <label for="myCards__balance">Balance</label>
-                            <p id="myCards__balance">$5000</p>
+                            <label for="myCards__balance" class="myCards_label">Balance</label>
+                            <p id="myCards__balance" class="myCards__info">$5000</p>
                         </span>
                         <i class="fa-regular fa-credit-card"></i>
                     </div>
                     <div class="myCards__details">
                         <span>
-                            <label for="myCards__name">Card Holder</label>
-                            <p id="myCards__name">Tornike Nozadze</p>
+                            <label for="myCards__name" class="myCards_label">Card Holder</label>
+                            <p id="myCards__name" class="myCards__info">Tornike Nozadze</p>
                         </span>
                         <span>
-                            <label for="myCards__valid">Valid Thru</label>
-                            <p id="myCards__name">11/28</p>
+                            <label for="myCards__valid" class="myCards_label">Valid Thru</label>
+                            <p id="myCards__name" class="myCards__info">11/28</p>
                         </span>
                     </div>
                     <div class="myCard__cardNumber myCard__cardNumber--active">
@@ -52,22 +56,22 @@
                         <i class="fa-brands fa-cc-mastercard"></i>
                     </div>
                 </li>
-                <li class="myCards__item">
+                <li class="myCards__item--passive myCards__item">
                     <div class="myCards__balance">
                         <span>
-                            <label for="myCards__balance">Balance</label>
-                            <p id="myCards__balance">$5000</p>
+                            <label for="myCards__balance" class="myCards_label">Balance</label>
+                            <p id="myCards__balance" class="myCards__info">$5000</p>
                         </span>
                         <i class="fa-regular fa-credit-card"></i>
                     </div>
                     <div class="myCards__details">
                         <span>
-                            <label for="myCards__name">Card Holder</label>
-                            <p id="myCards__name">Tornike Nozadze</p>
+                            <label for="myCards__name" class="myCards_label">Card Holder</label>
+                            <p id="myCards__name" class="myCards__info">Tornike Nozadze</p>
                         </span>
                         <span>
-                            <label for="myCards__valid">Valid Thru</label>
-                            <p id="myCards__name">11/28</p>
+                            <label for="myCards__valid" class="myCards_label">Valid Thru</label>
+                            <p id="myCards__name" class="myCards__info">11/28</p>
                         </span>
                     </div>
                     <div class="myCard__cardNumber ">
@@ -75,6 +79,46 @@
                         <i class="fa-brands fa-cc-mastercard"></i>
                     </div>
                 </li>
+            </ul>
+        </section>
+        <section class="myTransactions">
+            <ul class="myTransactions__textWrapper">
+                <li class="myTransactions__title">Recent Transaction</li>
+            </ul>
+            <ul class="myTransactions__container">
+               <li class="myTransactions__item">
+                <div>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
+                <div>
+                    <h3>Deposit</h3>
+                </div>
+                <div>
+                    <p>Amount: </p>
+                </div>
+               </li>
+               <li class="myTransactions__item">
+                <div>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
+                <div>
+                    <h3>Deposit</h3>
+                </div>
+                <div>
+                    <p>Amount: </p>
+                </div>
+               </li>
+               <li class="myTransactions__item">
+                <div>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
+                <div>
+                    <h3>Deposit</h3>
+                </div>
+                <div>
+                    <p>Amount: </p>
+                </div>
+               </li>
             </ul>
         </section>
     </body>

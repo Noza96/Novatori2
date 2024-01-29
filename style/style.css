@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "./variables/general.css";
+.myCards_label {
+  font-size: 50px;
 }
 
-li {
-  list-style: none;
+.myCards__info {
+  font-size: 1.3rem;
 }
 
 header {
@@ -24,6 +23,9 @@ header .header__menu {
   justify-content: space-between;
   width: 90%;
   padding: 0.5em;
+}
+header .header__menu .header__menuTitle {
+  font-size: 2rem;
 }
 header .header__search {
   padding-top: 0.3em;
@@ -64,11 +66,16 @@ header .header__search div i {
   font-size: 1.1em;
   font-weight: 600;
   color: #343C6A;
-  line-height: 3v;
-  padding-bottom: 0.7em;
+  line-height: 3vh;
 }
 .myCards .myCards__textWrapper .myCards__link {
   cursor: pointer;
+}
+.myCards .myCards__textWrapper .myCards__title, .myCards .myCards__textWrapper .myCards__link {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.93rem;
+  font-family: "Inter", sans-serif;
 }
 .myCards .myCards__cardWrapper {
   flex-direction: column;
@@ -78,18 +85,10 @@ header .header__search div i {
   flex-wrap: wrap;
   gap: 1em;
 }
-.myCards .myCards__cardWrapper .myCards__item {
-  height: 100%;
-  width: 85%;
-  border-radius: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border: 2px solid #ddd;
+.myCards .myCards__cardWrapper .myCards__item--passive {
   color: black;
 }
-.myCards .myCards__cardWrapper .myCards__item div {
+.myCards .myCards__cardWrapper .myCards__item--passive div {
   width: 100%;
   padding: 5%;
   display: flex;
@@ -98,24 +97,41 @@ header .header__search div i {
   align-items: center;
   min-height: 33%;
 }
-.myCards .myCards__cardWrapper .myCards__item div i {
+.myCards .myCards__cardWrapper .myCards__item--passive div i {
   font-size: 2em;
 }
-.myCards .myCards__cardWrapper .myCards__item .myCard__cardNumber {
+.myCards .myCards__cardWrapper .myCards__item--passive .myCard__cardNumber {
   border-radius: 0 0 1em 1em;
   background-color: white;
   border-top: 2px solid #ddd;
 }
-.myCards .myCards__cardWrapper .myCards__item .myCard__cardNumber.myCard__cardNumber--active {
+.myCards .myCards__cardWrapper .myCards__item--passive .myCard__cardNumber.myCard__cardNumber--active {
   background: rgb(76, 73, 237);
   background: linear-gradient(180deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
 }
-.myCards .myCards__cardWrapper .myCards__item.myCards__item--active {
+.myCards .myCards__cardWrapper .myCards__item--passive.myCards__item--active {
   background: rgb(76, 73, 237);
   background: linear-gradient(125deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
 }
-.myCards .myCards__cardWrapper .myCards__item--active {
-  height: 100%;
+
+.myCards__item--active {
+  color: white;
+}
+.myCards__item--active .myCard__cardNumber {
+  border-radius: 0 0 1em 1em;
+  background-color: white;
+}
+.myCards__item--active .myCard__cardNumber.myCard__cardNumber--active {
+  background: rgb(76, 73, 237);
+  background: linear-gradient(180deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}
+.myCards__item--active.myCards__item--active {
+  border: none;
+  background: rgb(76, 73, 237);
+  background: linear-gradient(125deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+}
+
+.myCards__item {
   width: 85%;
   border-radius: 1em;
   display: flex;
@@ -123,9 +139,8 @@ header .header__search div i {
   align-items: center;
   justify-content: space-around;
   border: 2px solid #ddd;
-  color: white;
 }
-.myCards .myCards__cardWrapper .myCards__item--active div {
+.myCards__item div {
   width: 100%;
   padding: 5%;
   display: flex;
@@ -134,19 +149,51 @@ header .header__search div i {
   align-items: center;
   min-height: 33%;
 }
-.myCards .myCards__cardWrapper .myCards__item--active div i {
+.myCards__item div i {
   font-size: 2em;
 }
-.myCards .myCards__cardWrapper .myCards__item--active .myCard__cardNumber {
-  border-radius: 0 0 1em 1em;
-  background-color: white;
+.myCards__item div label {
+  font-size: 1rem;
 }
-.myCards .myCards__cardWrapper .myCards__item--active .myCard__cardNumber.myCard__cardNumber--active {
-  background: rgb(76, 73, 237);
-  background: linear-gradient(180deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+
+.myTransactions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.myCards .myCards__cardWrapper .myCards__item--active.myCards__item--active {
-  border: none;
-  background: rgb(76, 73, 237);
-  background: linear-gradient(125deg, rgb(76, 73, 237) 18%, rgb(10, 6, 244) 100%);
+.myTransactions .myTransactions__textWrapper {
+  width: 90%;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #343C6A;
+}
+.myTransactions .myTransactions__textWrapper .myTransactions__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.93rem;
+  font-family: "Inter", sans-serif;
+}
+.myTransactions .myTransactions__container {
+  height: 18em;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.myTransactions .myTransactions__container li {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.myTransactions .myTransactions__container li i {
+  background-color: #FFF5D9;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border-radius: 1em;
 }/*# sourceMappingURL=style.css.map */
